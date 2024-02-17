@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinoBiletter</title>
+</head>
+<style>
+    label { display: table-cell; }
+    input { display: table-cell; }
+</style>
+<body>
+<h1 class = "H1 overskrift">Bestilling av kino biletter</h1>
+
+<form action="#">
+    <label for="film"><Select>
+    </Select> Velg hvilken film:</label>
+
+    <select id="film" class="form-select" aria-label="Default select example">
+
+        <option value="Velg film">Velg film her</option>
+        <option value="The nun">The nun 1</option>
+        <option value="The nun">The nun 2</option>
+        <option value="The nun">The nun 3</option>
+        <option value="The nun">The nun 4</option>
+    </select>
+
+    <label for="Antall">Antall:</label>
+    <input id="Antall" class="form-control" type="number"><p id="AntallError"></p>
+
+    <br>
+    <label for="Fornavn">Fornavn:</label>
+    <input id="Fornavn" class="form-control" type="text"><p id="FornavnError"></p>
+
+    <br>
+    <label for="Etternavn">Etternavn:</label>
+    <input id="Etternavn" class="form-control" type="text"><p id="EtternavnError"></p>
+
+    <br>
+    <label for="Telefonnr">Telefon Nummer:</label>
+    <input id="Telefonnr" class="form-control" type="number"><p id="TelefonnrError"></p>
+
+    <br>
+    <label for="Epost">Epost:</label><input id="Epost" class="form-control" type="text">
+    <p id="EpostError"></p> <br>
+
+    <input type="submit" class="form-control" value="Kjøp bilett" onclick="kjopticket()">
+
+</form>
+</body>
+</html>
