@@ -11,14 +11,11 @@
     input { display: table-cell; }
 </style>
 <body>
-<h1 class = "H1 overskrift">Bestilling av kino biletter</h1>
+<h1 class = "h1 overskrift">Bestilling av kino biletter</h1>
 
 <form action="#">
-    <label for="film"><Select>
-    </Select> Velg hvilken film:</label>
 
-    <select id="film" class="form-select" aria-label="Default select example">
-
+    <select id="film" class="film-select" aria-label="Default select example">
         <option value="Velg film">Velg film her</option>
         <option value="The nun">The nun 1</option>
         <option value="The nun">The nun 2</option>
@@ -27,26 +24,30 @@
     </select>
 
     <label for="Antall">Antall:</label>
-    <input id="Antall" class="form-control" type="number"><p id="AntallError"></p>
+    <input id="Antall" class="info-control" type="number"><p id="AntallError"></p>
 
     <br>
     <label for="Fornavn">Fornavn:</label>
-    <input id="Fornavn" class="form-control" type="text"><p id="FornavnError"></p>
+    <input id="Fornavn" class="info-control" type="text"><p id="FornavnError"></p>
 
     <br>
     <label for="Etternavn">Etternavn:</label>
-    <input id="Etternavn" class="form-control" type="text"><p id="EtternavnError"></p>
+    <input id="Etternavn" class="info-control" type="text"><p id="EtternavnError"></p>
 
     <br>
     <label for="Telefonnr">Telefon Nummer:</label>
-    <input id="Telefonnr" class="form-control" type="number"><p id="TelefonnrError"></p>
+    <input id="Telefonnr" class="info-control" type="number"><p id="TelefonnrError"></p>
 
     <br>
-    <label for="Epost">Epost:</label><input id="Epost" class="form-control" type="text">
+    <label for="Epost">Epost:</label><input id="Epost" class="info-control" type="text">
     <p id="EpostError"></p> <br>
 
-    <input type="submit" class="form-control" value="Kjøp bilett" onclick="kjopticket()">
+    <input type="submit" class="info-control" value="Kjøp bilett" onclick="kjopticket()">
 
+    <h1 class="h1 overskrift ">Alle billetter</h1>
+    <div id="ut"></div>
+    <button onclick="AltDelete()" type="button" class="btn btn-primary">Slett biletter</button>
+    <script src="script.js"></script>
 </form>
 </body>
 </html>
